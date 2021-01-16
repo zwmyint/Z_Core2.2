@@ -2,12 +2,12 @@ zaw
 $Z123Acc
 
 "ConnectionStrings": {
-		"DBDefaultConnection": "Server=MAXIMUS-XI\\SQLEXPRESS;Database=Z_Book; User Id=sa; Password=ERPfegha1730; Trusted_Connection=false; MultipleActiveResultSets=true; Persist Security Info=True;"
+		"DBDefaultConnection": "Server=MAXIMUS-XI\\SQLEXPRESS;Database=Z_Book; User Id=sa; Password=xxxxxxxx; Trusted_Connection=false; MultipleActiveResultSets=true; Persist Security Info=True;"
 	}
 
-// "Data Source=MAXIMUS-XI\\SQLEXPRESS;Database=Northwind;Trusted_Connection=false;User Id=sa; Password=ERPfegha1730;MultipleActiveResultSets=true; Persist Security Info=True;" Microsoft.EntityFrameworkCore.SQLServer -o Models --project D:\003\Z_Core2.2\TestScaffold\TestScaffold.csproj
+// "Data Source=MAXIMUS-XI\\SQLEXPRESS;Database=Northwind;Trusted_Connection=false;User Id=sa; Password=xxxxxxxx;MultipleActiveResultSets=true; Persist Security Info=True;" Microsoft.EntityFrameworkCore.SQLServer -o Models --project D:\003\Z_Core2.2\TestScaffold\TestScaffold.csproj
 
-dotnet ef dbcontext scaffold "Data Source=MAXIMUS-XI\\SQLEXPRESS;Database=Northwind;Trusted_Connection=false;User Id=sa; Password=ERPfegha1730;MultipleActiveResultSets=true; Persist Security Info=True;" Microsoft.EntityFrameworkCore.SQLServer -o Models --project D:\003\Z_Core2.2\TestScaffold\TestScaffold.csproj
+dotnet ef dbcontext scaffold "Data Source=MAXIMUS-XI\\SQLEXPRESS;Database=Northwind;Trusted_Connection=false;User Id=sa; Password=xxxxxxxx;MultipleActiveResultSets=true; Persist Security Info=True;" Microsoft.EntityFrameworkCore.SQLServer -o Models --project D:\003\Z_Core2.2\TestScaffold\TestScaffold.csproj
 
 
 //to install dotnet ef
