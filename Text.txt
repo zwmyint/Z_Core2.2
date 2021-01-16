@@ -16,9 +16,9 @@ PM> dotnet tool install --global dotnet-ef
 //to uninstall dotnet ef
 pm> dotnet tool uninstall --global dotnet-ef 
 
-pm>dotnet ef dbcontext scaffold "Data Source=MAXIMUS-XI\\SQLEXPRESS;Database=Northwind;Trusted_Connection=false;User Id=sa; Password=ERPfegha1730;MultipleActiveResultSets=true; Persist Security Info=True;" Microsoft.EntityFrameworkCore.SQLServer -o Models --project D:\003\Z_Core2.2\TestScaffold\TestScaffold.csproj
+pm>dotnet ef dbcontext scaffold "Data Source=MAXIMUS-XI\\SQLEXPRESS;Database=Northwind;Trusted_Connection=false;User Id=sa; Password=xxxxxxxx;MultipleActiveResultSets=true; Persist Security Info=True;" Microsoft.EntityFrameworkCore.SQLServer -o Models --project D:\003\Z_Core2.2\TestScaffold\TestScaffold.csproj
 
-pm>dotnet ef dbcontext scaffold "Data Source=MAXIMUS-XI\\SQLEXPRESS;Database=Northwind;Trusted_Connection=false;User Id=sa; Password=ERPfegha1730;MultipleActiveResultSets=true; Persist Security Info=True;" Microsoft.EntityFrameworkCore.SQLServer -o Models -t Employees -c AppDbContext --data-annotations --project D:\003\Z_Core2.2\TestScaffold\TestScaffold.csproj
+pm>dotnet ef dbcontext scaffold "Data Source=MAXIMUS-XI\\SQLEXPRESS;Database=Northwind;Trusted_Connection=false;User Id=sa; Password=xxxxxxxx;MultipleActiveResultSets=true; Persist Security Info=True;" Microsoft.EntityFrameworkCore.SQLServer -o Models -t Employees -c AppDbContext --data-annotations --project D:\003\Z_Core2.2\TestScaffold\TestScaffold.csproj
 
 
 // Identity Framework Tool
