@@ -1,0 +1,47 @@
+zaw
+$Z123Acc
+
+"ConnectionStrings": {
+		"DBDefaultConnection": "Server=MAXIMUS-XI\\SQLEXPRESS;Database=Z_Book; User Id=sa; Password=ERPfegha1730; Trusted_Connection=false; MultipleActiveResultSets=true; Persist Security Info=True;"
+	}
+
+// "Data Source=MAXIMUS-XI\\SQLEXPRESS;Database=Northwind;Trusted_Connection=false;User Id=sa; Password=ERPfegha1730;MultipleActiveResultSets=true; Persist Security Info=True;" Microsoft.EntityFrameworkCore.SQLServer -o Models --project D:\003\Z_Core2.2\TestScaffold\TestScaffold.csproj
+
+dotnet ef dbcontext scaffold "Data Source=MAXIMUS-XI\\SQLEXPRESS;Database=Northwind;Trusted_Connection=false;User Id=sa; Password=ERPfegha1730;MultipleActiveResultSets=true; Persist Security Info=True;" Microsoft.EntityFrameworkCore.SQLServer -o Models --project D:\003\Z_Core2.2\TestScaffold\TestScaffold.csproj
+
+
+//to install dotnet ef
+PM> dotnet tool install --global dotnet-ef
+
+//to uninstall dotnet ef
+pm> dotnet tool uninstall --global dotnet-ef 
+
+pm>dotnet ef dbcontext scaffold "Data Source=MAXIMUS-XI\\SQLEXPRESS;Database=Northwind;Trusted_Connection=false;User Id=sa; Password=ERPfegha1730;MultipleActiveResultSets=true; Persist Security Info=True;" Microsoft.EntityFrameworkCore.SQLServer -o Models --project D:\003\Z_Core2.2\TestScaffold\TestScaffold.csproj
+
+pm>dotnet ef dbcontext scaffold "Data Source=MAXIMUS-XI\\SQLEXPRESS;Database=Northwind;Trusted_Connection=false;User Id=sa; Password=ERPfegha1730;MultipleActiveResultSets=true; Persist Security Info=True;" Microsoft.EntityFrameworkCore.SQLServer -o Models -t Employees -c AppDbContext --data-annotations --project D:\003\Z_Core2.2\TestScaffold\TestScaffold.csproj
+
+
+// Identity Framework Tool
+pm>dotnet tool install --global dotnet-ef
+
+// Identity Framework Designer
+
+
+// migration for Identity (**** build solution and project ****)
+pm>dotnet ef migrations add IdentityMigration --context AppIdentityDbContext --project D:\003\Z_Core2.2\EmployeeManager\EmployeeManager.csproj
+
+pm>dotnet ef database update --context AppIdentityDbcontext --project D:\003\Z_Core2.2\EmployeeManager\EmployeeManager.csproj
+
+
+
+
+
+
+
+
+
+
+
+
+
+
