@@ -16,6 +16,7 @@ namespace EmployeeManager.APIClient.Controllers
     public class EmployeeManagerController : Controller
     {
         private readonly HttpClient _client = null;
+        
         private string employeesApiUrl = "";
 
         //ctor
@@ -28,6 +29,13 @@ namespace EmployeeManager.APIClient.Controllers
         //
         public async Task<IActionResult> List() //ListAsync
         {
+            //HttpClientHandler clientHandler = new HttpClientHandler();
+            //clientHandler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; };
+
+            //// Pass the handler to httpclient(from you are calling api)
+            //HttpClient _client = new HttpClient(clientHandler);
+
+
             HttpResponseMessage response = await _client.GetAsync(employeesApiUrl);
             string stringData = await response.Content.ReadAsStringAsync();
             var options = new JsonSerializerOptions

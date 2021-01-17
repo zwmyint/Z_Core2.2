@@ -70,7 +70,8 @@ namespace EmployeeManager.APIClient
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
+            // https
+            //app.UseHttpsRedirection();
             app.UseStaticFiles();
 
             app.UseAuthentication();
