@@ -45,13 +45,14 @@ namespace EmployeeManager.APIClient
                 options.LoginPath = "/Security/SignIn";
                 options.AccessDeniedPath = "/Security/AccessDenied";
             });
-            
+
             // added
             HttpClient client = new HttpClient();
             client.BaseAddress = new Uri(Configuration.GetValue<string>("AppSettings:BaseUrl"));
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             services.AddSingleton<HttpClient>(client);
-            
+
+
             // MVC
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
